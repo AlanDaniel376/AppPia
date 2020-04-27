@@ -1,31 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#003A3333"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
 
-    <LinearLayout
-        android:layout_width="164dp"
-        android:layout_height="118dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="8dp">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="168dp"
-            android:layout_height="112dp"
-            app:srcCompat="@drawable/logo1"
-            tools:layout_editor_absoluteX="128dp"
-            tools:layout_editor_absoluteY="52dp" />
-    </LinearLayout>
-
-
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

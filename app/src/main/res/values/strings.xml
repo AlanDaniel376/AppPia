@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Pia</string>
     <string name="action_settings">Settings</string>
+    <string-array name="Tienda">
+        <item>Abarrotes1</item>
+        <item>Abarrotes2</item>
+        <item>Abarrotes3</item>
+    </string-array>
+
     <string-array name="productsS">
         <item>Leche</item>
         <item>Queso</item>
-        <item>Yougurt</item>
-        <item>Leche Light</item>
+        <item>Crema</item>
     </string-array>
+
     <string name="Login">Login</string>
     <string name="Visitas">Confirmar Visitas</string>
 </resources>

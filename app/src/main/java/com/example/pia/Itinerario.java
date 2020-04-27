@@ -14,8 +14,8 @@ public class Itinerario extends AppCompatActivity {
     }
 
     //metodo boton siguiente
-       public void Visitas(View view) {
-         Intent visitas = new Intent(this, Inventario.class);
-          startActivity(visitas);
+       public void Itinerario(View view) {
+         Intent itinerario = new Intent(this, Inventario.class);
+          startActivity(itinerario);
     }
 }

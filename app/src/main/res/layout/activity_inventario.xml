@@ -1,43 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Inventario">
+    android:orientation="vertical"
+    tools:context=".Itinerario">
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Codigo de barra"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="59dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Fecha"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="59dp" />
+        <EditText
+            android:id="@+id/folio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight = "80dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Folio"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Fecha"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="95dp"
-        android:layout_height="21dp"
-        android:text="Tienda"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="168dp" />
+    android:id="@+id/Tienda1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="Tienda" />
 
     <Spinner
-        android:id="@+id/products"
+        android:id="@+id/Tienda"
+        android:layout_marginTop="12dp"
         android:layout_width="182dp"
         android:layout_height="26dp"
         tools:layout_editor_absoluteX="7dp"
         tools:layout_editor_absoluteY="206dp" />
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/ProductoS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Producto" />
+
+    <Spinner
+        android:id="@+id/products"
+        android:layout_marginTop="12dp"
+        android:layout_width="182dp"
+        android:layout_height="26dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="Stock: " />
+
+        <EditText
+            android:id="@+id/checkItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_id"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="30dp"
+        android:text="RegistrarExistencia" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="FinalizarCaptura" />
+    </LinearLayout>
+
+</LinearLayout>
