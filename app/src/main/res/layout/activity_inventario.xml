@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondo"
     tools:context=".Itinerario">
 
     <LinearLayout
@@ -40,6 +41,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="30dp"
     android:text="Tienda" />
+
 
     <Spinner
         android:id="@+id/Tienda"
@@ -109,4 +111,104 @@
         android:text="FinalizarCaptura" />
     </LinearLayout>
 
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView012"
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Codigo"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextView1014"
+                android:layout_weight="1"
+                android:background="#d3d3d3"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Producto"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextView014"
+                android:layout_weight="1"
+                android:background="#cac9c9"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Cajas"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextView016"
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Precio Unitario"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Row 3 with 3 columns -->
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#d3d3d3"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#DDD9D9"
+                android:gravity="center"
+                android:padding="20dip"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#9E9393"
+                android:gravity="center"
+                android:padding="20dip"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+    </TableLayout>
 </LinearLayout>

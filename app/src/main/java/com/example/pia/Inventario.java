@@ -35,5 +35,9 @@ public class Inventario extends AppCompatActivity implements AdapterView.OnItemS
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
 }
+
+
 
