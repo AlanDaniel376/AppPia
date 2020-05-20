@@ -3,16 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/devolucionesdash"
+    android:background="@drawable/moduloventas"
     android:layout_height="match_parent"
     tools:context=".devoluciones">
 
+
     <Button
-        android:id="@+id/buttonDev"
+        android:id="@+id/buttonDia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginTop="30dp"
-        android:text="VER DEVOLUCIONES" />
+        android:text="VER VENTAS" />
+
+
 
 </RelativeLayout>

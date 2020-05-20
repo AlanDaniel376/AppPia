@@ -17,23 +17,25 @@ public class Clientes extends AppCompatActivity implements AdapterView.OnItemSel
 
     //Assign Variable
     EditText etSource, etDestination;
-    Button btnTrack;
+    Button   btnTrack;
+    Button   btnMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clientes);
 
-        etSource = findViewById(R.id.et_Source);
+        etSource      = findViewById(R.id.et_Source);
         etDestination = findViewById(R.id.et_Destination);
-        btnTrack = findViewById(R.id.btn_track);
+        btnTrack      = findViewById(R.id.btn_track);
+        btnMenu       = findViewById(R.id.btnDashboard);
 
         btnTrack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //get value from editText
 
-                String sSource = etSource.getText().toString().trim();
+                String sSource      = etSource.getText().toString().trim();
                 String sDestination = etDestination.getText().toString().trim();
 
                 //Check condition
@@ -91,6 +93,13 @@ public class Clientes extends AppCompatActivity implements AdapterView.OnItemSel
              startActivity(intent);
          }
 
+    }
+
+
+    public void Siguiente (View view){
+
+        Intent siguiente = new Intent(this, dashboard.class);
+        startActivity(siguiente);
     }
 
         @Override

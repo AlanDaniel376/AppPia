@@ -6,51 +6,51 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.Toast;
 
-public class devoluciones extends AppCompatActivity {
+public class ventas extends AppCompatActivity {
 
     Button show;
     Dialog myDialog;
-    Button editd, backd;
+    Button edit, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_devoluciones);
-        show = (Button)findViewById(R.id.buttonDev);
+        setContentView(R.layout.activity_ventas);
+        show = (Button)findViewById(R.id.buttonDia);
         show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                myCustomAlertDialogD();
+                myCustomAlertDialog();
 
             }
         });
 
-
     }
 
-    public void myCustomAlertDialogD(){
+    public void myCustomAlertDialog(){
 
-        myDialog = new Dialog(devoluciones.this);
+        myDialog = new Dialog(ventas.this);
         myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        myDialog.setContentView(R.layout.customdialogventas);
-        myDialog.setTitle("Devoluciones");
+        myDialog.setContentView(R.layout.customdialog);
+        myDialog.setTitle("Ventas");
 
-        editd = (Button) myDialog.findViewById(R.id.editd);
-        backd = (Button) myDialog.findViewById(R.id.backd);
+        edit = (Button) myDialog.findViewById(R.id.edit);
+        back = (Button) myDialog.findViewById(R.id.back);
 
-        editd.setEnabled(true);
-        backd.setEnabled(true);
+        edit.setEnabled(true);
+        back.setEnabled(true);
 
-        editd.setOnClickListener(new View.OnClickListener() {
+        edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
         });
 
-        backd.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -59,7 +59,7 @@ public class devoluciones extends AppCompatActivity {
             }
         });
 
-        myDialog.show();
+       myDialog.show();
 
     }
 }

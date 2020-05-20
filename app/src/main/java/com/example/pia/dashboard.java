@@ -7,7 +7,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 public class dashboard extends AppCompatActivity implements View.OnClickListener {
-    private CardView cardItinerario, cardInventario, cardDevoluciones;
+    private CardView cardItinerario, cardInventario, cardDevoluciones, cardVentas,cardX;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,15 @@ public class dashboard extends AppCompatActivity implements View.OnClickListener
         cardItinerario   = (CardView) findViewById(R.id.cardItinerario);
         cardInventario   = (CardView) findViewById(R.id.cardInventario);
         cardDevoluciones = (CardView) findViewById(R.id.cardDevoluciones) ;
+        cardVentas       = (CardView) findViewById(R.id.cardVentas);
+        cardX            = (CardView) findViewById(R.id.cardX);
 
         // Add click listener to the cards
         cardItinerario.setOnClickListener(this);
         cardInventario.setOnClickListener(this);
         cardDevoluciones.setOnClickListener(this);
+        cardVentas.setOnClickListener(this);
+        cardX.setOnClickListener(this);
     }
 
     @Override
@@ -45,6 +49,17 @@ public class dashboard extends AppCompatActivity implements View.OnClickListener
                 i = new Intent(this, devoluciones.class);
                 startActivity(i);
                 break;
+
+            case R.id.cardVentas:
+                i = new Intent(this, ventas.class);
+                startActivity(i);
+                break;
+
+            case R.id.cardX:
+                i = new Intent(this, Clientes.class);
+                startActivity(i);
+                break;
+
         }
     }
 }
